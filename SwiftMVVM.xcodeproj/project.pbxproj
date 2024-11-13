@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B0D837DC2CE4A7C40089275E /* SwiftMVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D837DB2CE4A7C40089275E /* SwiftMVVMApp.swift */; };
-		B0D837DE2CE4A7C40089275E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D837DD2CE4A7C40089275E /* ContentView.swift */; };
 		B0D837E02CE4A7CC0089275E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D837DF2CE4A7CC0089275E /* Assets.xcassets */; };
 		B0D837E32CE4A7CC0089275E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0D837E22CE4A7CC0089275E /* Preview Assets.xcassets */; };
 		B0D837ED2CE4A7CC0089275E /* SwiftMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D837EC2CE4A7CC0089275E /* SwiftMVVMTests.swift */; };
 		B0D837F72CE4A7CD0089275E /* SwiftMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D837F62CE4A7CD0089275E /* SwiftMVVMUITests.swift */; };
 		B0D837F92CE4A7CD0089275E /* SwiftMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D837F82CE4A7CD0089275E /* SwiftMVVMUITestsLaunchTests.swift */; };
+		B0D8380B2CE4AA320089275E /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8380A2CE4AA320089275E /* UsersView.swift */; };
+		B0D8380D2CE4AAAC0089275E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8380C2CE4AAAC0089275E /* UserModel.swift */; };
+		B0D8380F2CE4AAE20089275E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8380E2CE4AAE20089275E /* UserViewModel.swift */; };
+		B0D838112CE4AB1D0089275E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D838102CE4AB1D0089275E /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		B0D837D82CE4A7C40089275E /* SwiftMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D837DB2CE4A7C40089275E /* SwiftMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMVVMApp.swift; sourceTree = "<group>"; };
-		B0D837DD2CE4A7C40089275E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B0D837DF2CE4A7CC0089275E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0D837E22CE4A7CC0089275E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0D837E82CE4A7CC0089275E /* SwiftMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +46,10 @@
 		B0D837F22CE4A7CC0089275E /* SwiftMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D837F62CE4A7CD0089275E /* SwiftMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMVVMUITests.swift; sourceTree = "<group>"; };
 		B0D837F82CE4A7CD0089275E /* SwiftMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B0D8380A2CE4AA320089275E /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		B0D8380C2CE4AAAC0089275E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B0D8380E2CE4AAE20089275E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		B0D838102CE4AB1D0089275E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,13 @@
 		B0D837DA2CE4A7C40089275E /* SwiftMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B0D838092CE4A9FA0089275E /* ViewModel */,
+				B0D838082CE4A94C0089275E /* Views */,
+				B0D838072CE4A9400089275E /* Models */,
 				B0D837DB2CE4A7C40089275E /* SwiftMVVMApp.swift */,
-				B0D837DD2CE4A7C40089275E /* ContentView.swift */,
 				B0D837DF2CE4A7CC0089275E /* Assets.xcassets */,
 				B0D837E12CE4A7CC0089275E /* Preview Content */,
+				B0D838102CE4AB1D0089275E /* WebService.swift */,
 			);
 			path = SwiftMVVM;
 			sourceTree = "<group>";
@@ -125,6 +134,30 @@
 				B0D837F82CE4A7CD0089275E /* SwiftMVVMUITestsLaunchTests.swift */,
 			);
 			path = SwiftMVVMUITests;
+			sourceTree = "<group>";
+		};
+		B0D838072CE4A9400089275E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0D8380C2CE4AAAC0089275E /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B0D838082CE4A94C0089275E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B0D8380A2CE4AA320089275E /* UsersView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B0D838092CE4A9FA0089275E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B0D8380E2CE4AAE20089275E /* UserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0D837DE2CE4A7C40089275E /* ContentView.swift in Sources */,
 				B0D837DC2CE4A7C40089275E /* SwiftMVVMApp.swift in Sources */,
+				B0D8380F2CE4AAE20089275E /* UserViewModel.swift in Sources */,
+				B0D8380D2CE4AAAC0089275E /* UserModel.swift in Sources */,
+				B0D838112CE4AB1D0089275E /* WebService.swift in Sources */,
+				B0D8380B2CE4AA320089275E /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

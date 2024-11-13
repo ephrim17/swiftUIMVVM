@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+@MainActor
+class UserViewModel: ObservableObject {
+    
+    @Published var users : [User]?
+    
+    func fetchUsers() async {
+        do {
+            self.users = try await WebService.getData(type: User.self)
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+    }
+}

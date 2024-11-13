@@ -8,9 +8,23 @@
 import SwiftUI
 
 struct UsersView: View {
+    
+    @StateObject var usersViewModel = UserViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(usersViewModel.users ?? [], id: \.id) { user in
+            VStack(alignment: .leading) {
+                Text(user.login?.capitalized ?? "")
+                    .font(.headline)
+                Text(user.url ?? "")
+                    .font(.subheadline)
+            }
+        }
+        .task {
+            await usersViewModel.fetchUsers()
+        }
     }
+    
 }
 
 #Preview {

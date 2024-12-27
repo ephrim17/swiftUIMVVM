@@ -22,6 +22,7 @@ struct UsersView: View {
         }
         .task {
             await usersViewModel.fetchUsers()
+            usersViewModel.fireApiCall()
         }
     }
     

@@ -18,6 +18,8 @@
 		B0D8380D2CE4AAAC0089275E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8380C2CE4AAAC0089275E /* UserModel.swift */; };
 		B0D8380F2CE4AAE20089275E /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D8380E2CE4AAE20089275E /* UserViewModel.swift */; };
 		B0D838112CE4AB1D0089275E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D838102CE4AB1D0089275E /* WebService.swift */; };
+		B0FAA1612D3699260043CB2B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAA1602D3699260043CB2B /* ImagePicker.swift */; };
+		B0FAA1632D369A010043CB2B /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAA1622D369A010043CB2B /* ImagePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		B0D8380C2CE4AAAC0089275E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B0D8380E2CE4AAE20089275E /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		B0D838102CE4AB1D0089275E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		B0FAA1602D3699260043CB2B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B0FAA1622D369A010043CB2B /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 		B0D837DA2CE4A7C40089275E /* SwiftMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B0FAA15F2D36913C0043CB2B /* UIViewControllerRepresentable */,
 				B0D838092CE4A9FA0089275E /* ViewModel */,
 				B0D838082CE4A94C0089275E /* Views */,
 				B0D838072CE4A9400089275E /* Models */,
@@ -161,6 +166,15 @@
 				B0D8380E2CE4AAE20089275E /* UserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B0FAA15F2D36913C0043CB2B /* UIViewControllerRepresentable */ = {
+			isa = PBXGroup;
+			children = (
+				B0FAA1602D3699260043CB2B /* ImagePicker.swift */,
+				B0FAA1622D369A010043CB2B /* ImagePickerViewController.swift */,
+			);
+			path = UIViewControllerRepresentable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +309,9 @@
 			files = (
 				B0D837DC2CE4A7C40089275E /* SwiftMVVMApp.swift in Sources */,
 				B0D8380F2CE4AAE20089275E /* UserViewModel.swift in Sources */,
+				B0FAA1632D369A010043CB2B /* ImagePickerViewController.swift in Sources */,
 				B0416F2C2D1EEE3F000E7A32 /* CombineWebService.swift in Sources */,
+				B0FAA1612D3699260043CB2B /* ImagePicker.swift in Sources */,
 				B0D8380D2CE4AAAC0089275E /* UserModel.swift in Sources */,
 				B0D838112CE4AB1D0089275E /* WebService.swift in Sources */,
 				B0D8380B2CE4AA320089275E /* UsersView.swift in Sources */,
